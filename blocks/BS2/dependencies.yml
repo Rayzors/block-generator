@@ -1,0 +1,7 @@
+nuxt:
+  js:
+    - vue
+
+sage:
+  js:
+    - vue
