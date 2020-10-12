@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-const path = require('path');
-const args = process.argv.slice(2);
-const {Plop, run} = require('plop');
-const argv = require('minimist')(args);
+const path = require('path')
+const args = process.argv.slice(2)
+const { Plop, run } = require('plop')
+const argv = require('minimist')(args)
 
 Plop.launch({
   cwd: argv.cwd,
@@ -12,4 +12,4 @@ Plop.launch({
   completion: argv.completion
 // This will merge the `plop` argv and the generator argv.
 // This means that you don't need to use `--` anymore
-}, env => run(env, undefined, true));
+}, env => run(env, undefined, true))

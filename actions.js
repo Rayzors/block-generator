@@ -6,12 +6,12 @@ module.exports = function ({ blocks, env }) {
     acfPath: `./blocks/${blockname}/${blockname}.json`,
     assetsPath: `./blocks/${blockname}/assets`,
     dependenciesPath: `./blocks/${blockname}/dependencies.yml`,
-    templateFiles: `./blocks/${blockname}/${env}`,
-  }));
+    templateFiles: `./blocks/${blockname}/${env}`
+  }))
 
   actions.push('Installation des dépendences', {
-    type: 'installDependencies',
-  });
+    type: 'installDependencies'
+  })
 
-  return actions;
+  return actions
 }
